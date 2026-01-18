@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shean Amante | Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="preloader">
+        <svg class="preloader-s" viewBox="0 0 130 130" width="100" height="130">
+            <path d="M 75 30 C 75 30 70 10 50 10 C 30 10 15 25 15 45 C 15 75 85 75 85 105 C 85 125 65 140 45 140 C 25 140 15 120 15 120" 
+                  fill="transparent" 
+                  stroke-width="12" 
+                  stroke-linecap="round" 
+                  stroke-linejoin="round"/>
+        </svg>
+    </div>
+
+    <div class="glass-bg">
+        <div class="blob"></div>
+        <div class="blob"></div>
+    </div>
+
+    <nav class="navbar">
+        <div class="navbar__container glass-card">
+            <div class="navbar__logo" onclick="window.scrollTo(0,0)">Shean Amante</div>
+            <ul class="navbar__links">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="navbar__right">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="burger-menu" id="burger-menu" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div class="mobile-menu" id="mobile-menu">
+            <ul class="mobile-menu__links">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="mobile-menu__socials">
+                <a href="https://github.com/SCJAB" target="_blank" rel="noopener" title="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://linkedin.com/in/sheamante" target="_blank" rel="noopener" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container">
+        
+        <section id="home" class="section hero glass-card">
+            <p>Hi, my name is</p>
+            <h1 class="hero__title">Shean Amante</h1>
+            <p class="hero__subtitle">A developer exploring UI/UX design and interface development.</p>
+            
+            <div class="hero__actions">
+                <a href="#projects" class="btn btn--glass">Explore Work</a>
+                <a href="YOUR_GITHUB_CV_URL_HERE" target="_blank" class="btn btn--glass btn--secondary">
+                    <i class="fas fa-file-download"></i> View CV
+                </a>
+            </div>
+        </section>
+
+        <section id="about" class="section about-section glass-card">
+            <div class="about-content">
+                <h2 class="section-heading">About Me</h2>
+                <h1 class="about-title">Exploring UI/UX and modern web experiences</h1>
+                <p class="about-text">
+                    I'm interested in UI/UX and how design and code come together to create clear, user-friendly interfaces. I'm currently learning and improving my skills using Figma, HTML, CSS, JavaScript, Nuxt.js, Tailwind CSS, and Git.
+                </p>
+            </div>
+            <div class="about-images">
+                <img src="assets/images/about/profile.jpg" alt="Profile picture" class="about-img img-1">
+                
+                <div class="tech-stack">
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank" class="tech-bubble size-lg" style="--delay: 0s; top: 5%; left: 10%;" title="HTML5">
+                        <i class="fab fa-html5"></i>
+                        <span class="tooltip">HTML5</span>
+                    </a>
+                    
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank" class="tech-bubble size-lg" style="--delay: -2s; top: 5%; right: 0%;" title="CSS3">
+                        <i class="fab fa-css3-alt"></i>
+                        <span class="tooltip">CSS3</span>
+                    </a>
+
+                    <a href="https://www.javascript.com/" target="_blank" class="tech-bubble size-lg" style="--delay: -4s; top: 40%; left: 25%;" title="JavaScript">
+                        <i class="fab fa-js"></i>
+                        <span class="tooltip">JavaScript</span>
+                    </a>
+
+                    <a href="https://www.figma.com" target="_blank" class="tech-bubble size-md" style="--delay: -1s; bottom: 30%; right: 15%;" title="Figma">
+                        <i class="fab fa-figma"></i>
+                        <span class="tooltip">Figma</span>
+                    </a>
+
+                    <a href="https://git-scm.com" target="_blank" class="tech-bubble size-md" style="--delay: -3s; bottom: 15%; left: 10%;" title="Git">
+                        <i class="fab fa-git-alt"></i>
+                        <span class="tooltip">Git</span>
+                    </a>
+
+                    <a href="https://nuxt.com" target="_blank" class="tech-bubble size-md" style="--delay: -1.5s; top: 25%; left: 55%;" title="Nuxt.js">
+                        <i class="fab fa-vuejs"></i>
+                        <span class="bubble-text">Nuxt</span>
+                    </a>
+
+                    <a href="https://tailwindcss.com" target="_blank" class="tech-bubble size-sm" style="--delay: -2.5s; bottom: 10%; right: 35%;" title="Tailwind CSS">
+                        <img src="assets/images/about/Tailwind CSS.svg" alt="Tailwind CSS" class="tailwind-logo">
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section projects-section">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="bento-grid">
+                <article class="project-card glass-card project-card--large" data-repo="https://github.com/Aubscure/Kiosk---Merchandise-for-ProWare-Web-App">
+                    <div class="project-image">
+                        <img src="assets/images/projects/Merchandise_Kiosk.png" alt="Kiosk Merchandise">
+                        <h6 class="project-badge">Web Programming Elective Project</h6>
+                    </div>
+                    <div class="project-content">
+                        <h3>Kiosk Merchandise</h3>
+                        <p>Kiosk Merchandise is a web programming elective project that focuses on creating a prototype for a school merchandise kiosk. It presents a structured layout for displaying and organizing items like prowear, uniforms, pins, sling IDs, and other school merchandise.</p>
+                        <div class="project-link"><i class="fab fa-github"></i> View on GitHub</div>
+                    </div>
+                </article>
+                <article class="project-card glass-card project-card--large" data-repo="https://github.com/Aubscure/SODAA-with-wall-detection">
+                    <div class="project-image">
+                        <img src="assets/images/projects/SODAA.png" alt="SODAA App">
+                        <h6 class="project-badge">CS Thesis Project</h6>
+                    </div>
+                    <div class="project-content">
+                        <h3>SODAA</h3>
+                        <p>SODAA (Smart Obstacle Detection Avoidance Assistance) is a thesis project that presents a mobile application designed to assist visually impaired individuals by detecting environmental obstacles in real time using machine learning and delivering adaptive auditory feedback to support safer navigation.</p>
+                        <div class="project-link"><i class="fab fa-github"></i> View on GitHub</div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer glass-card" id="contact">
+        <h2 class="footer__heading">Get in Touch</h2>
+        <div class="footer__contact-info">
+            <div class="contact-item">
+                <i class="fas fa-envelope"></i>
+                <a href="mailto:asheancecyl@gmail.com">asheancecyl@gmail.com</a>
+            </div>
+            <div class="contact-item">
+                <i class="fas fa-phone"></i>
+                <a href="tel:+1234567890">+63 967 530 0569</a>
+            </div>
+        </div>
+        <div class="footer__socials">
+            <a href="https://github.com/SCJAB" target="_blank" rel="noopener" title="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/shean-cecyl-amante-402ab03a6" target="_blank" rel="noopener" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        </div>
+        <p class="footer__copy">&copy; 2024 Shean Amante. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
